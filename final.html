@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forever Yours</title>
+  <style>
+    body {
+      background-color: #f3e5f5;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 50px;
+    }
+    h1 {
+      color: #8e24aa;
+    }
+    audio {
+      margin-top: 20px;
+      width: 80%;
+    }
+    button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #ba68c8;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ab47bc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ab Sun Dadu…</h1>
+
+  <!-- Romantic song -->
+  <audio controls autoplay loop>
+    <source src="romantic-song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <br>
+
+  <!-- Button to show love letter -->
+  <button onclick="showLetter()">Open Your Letter</button>
+
+  <script>
+    function showLetter() {
+      alert("I love you Dadu 🥀✨\n\nTu ho toh sab kuch pyara lagta hai...\nAur tujhse pyaar karna mera favorite habit ban gaya hai...");
+    }
+  </script>
+</body>
+</html>
