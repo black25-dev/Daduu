@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Forever Yours</title>
-  <style>
-    body {
-      background-color: #f3e5f5;
-      text-align: center;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 50px;
-    }
-    h1 {
-      color: #8e24aa;
-    }
-    audio {
-      margin-top: 20px;
-      width: 80%;
-    }
-    button {
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #ba68c8;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #ab47bc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dadu ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffcccb;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #d63384;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        .popup p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d63384;
+        }
+        .btn {
+            background: #d63384;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <h1>Ab Sun Dadu…</h1>
 
-  <!-- Romantic song -->
-  <audio controls autoplay loop>
-    <source src="romantic-song.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+    <div class="container">
+        <h1>🎶 Special Message for My Dadu 🥀✨</h1>
+        <button class="btn" onclick="showPopup()">Click to Open Surprise</button>
+    </div>
 
-  <br>
+    <div class="popup" id="popup">
+        <p>I Love You Dadu 🥀✨</p>
+        <button class="btn" onclick="hidePopup()">Close</button>
+    </div>
 
-  <!-- Button to show love letter -->
-  <button onclick="showLetter()">Open Your Letter</button>
+    <audio id="bgMusic" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
-  <script>
-    function showLetter() {
-      alert("I love you Dadu 🥀✨\n\nTu ho toh sab kuch pyara lagta hai...\nAur tujhse pyaar karna mera favorite habit ban gaya hai...");
-    }
-  </script>
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("bgMusic").play();
+        }
+
+        function hidePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
 </body>
 </html>
